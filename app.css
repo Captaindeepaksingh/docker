@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
- 
+
 .App {
     height: 100vh;
     width: 100%;
@@ -8,62 +8,74 @@
     flex-direction: column;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
- 
+
 .heading {
     font-family: 'Pacifico', cursive;
     font-size: 35px;
+    color: #333;
 }
- 
+
 .container {
-    height: auto;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
- 
+
 input {
-    padding-left: 5px;
-    font-size: 20px;
-    height: 36px;
+    padding: 10px;
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
 }
- 
+
 .middle,
 .right {
-    width: 120px;
+    width: 33%;
+    margin: 0 5px;
 }
- 
+
 .switch {
-    padding: 5px;
-    background-color: rgb(226, 252, 184);
+    padding: 10px;
+    background-color: #f0f0f0;
     border-radius: 50%;
     cursor: pointer;
+    display: inline-block;
 }
- 
+
 .result {
     box-sizing: border-box;
-    width: 800px;
-    padding-left: 30px;
+    width: 100%;
+    padding: 20px;
 }
- 
+
 button {
-    width: 100px;
-    height: 30px;
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
     font-weight: bold;
-    font-size: 20px;
-    margin-top: 15px;
-    border: 2px solid forestgreen;
-    background-color: rgb(226, 252, 184);
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
- 
+
 p,
 h3,
 button,
 .switch {
     color: forestgreen;
 }
- 
+
 p {
-    font-size: 30px;
+    font-size: 28px;
 }
